@@ -20,7 +20,7 @@ public class EventDatabase {
 	
 	private Data myData;
 	private final Context myContext;
-	private SQLiteDatabase myDatabase;
+	private static SQLiteDatabase myDatabase;
 	
 	private static class Data extends SQLiteOpenHelper{
 
@@ -45,17 +45,51 @@ public class EventDatabase {
 			ContentValues cv1 = new ContentValues();
 			cv1.put(KEY_ROWID,0);
 			cv1.put(KEY_EVENTID, "1");
-			cv1.put(KEY_EVENT, "TEST EVENT 1");
+			cv1.put(KEY_EVENT, "SURC");
 			cv1.put(KEY_TEAM, "0");
 			db.insert(DATABASE_TABLE1, null, cv1);
 			
 			ContentValues cv2 = new ContentValues();
 			cv2.put(KEY_ROWID,1);
 			cv2.put(KEY_EVENTID, "2");
-			cv2.put(KEY_EVENT, "TEST EVENT 2");
+			cv2.put(KEY_EVENT, "BlackBox");
 			cv2.put(KEY_TEAM, "1");
 			db.insert(DATABASE_TABLE1, null, cv2);
-			
+
+			ContentValues cv3 = new ContentValues();
+			cv3.put(KEY_ROWID, 2);
+			cv3.put(KEY_EVENTID, "3");
+			cv3.put(KEY_EVENT, "Elekart");
+			cv3.put(KEY_TEAM, "2");
+			db.insert(DATABASE_TABLE1, null, cv3);
+
+			ContentValues cv4 = new ContentValues();
+			cv4.put(KEY_ROWID, 3);
+			cv4.put(KEY_EVENTID, "4");
+			cv4.put(KEY_EVENT, "Android App Development Workshop");
+			cv4.put(KEY_TEAM, "3");
+			db.insert(DATABASE_TABLE1, null, cv4);
+
+			ContentValues cv5 = new ContentValues();
+			cv5.put(KEY_ROWID, 4);
+			cv5.put(KEY_EVENTID, "5");
+			cv5.put(KEY_EVENT, "Elekart");
+			cv5.put(KEY_TEAM, "4");
+			db.insert(DATABASE_TABLE1, null, cv5);
+
+			ContentValues cv6 = new ContentValues();
+			cv6.put(KEY_ROWID, 5);
+			cv6.put(KEY_EVENTID, "6");
+			cv6.put(KEY_EVENT, "Game Development Workshop");
+			cv6.put(KEY_TEAM, "5");
+			db.insert(DATABASE_TABLE1, null, cv6);
+
+			ContentValues cv7 = new ContentValues();
+			cv7.put(KEY_ROWID, 6);
+			cv7.put(KEY_EVENTID, "7");
+			cv7.put(KEY_EVENT, "PCB Design Workshop");
+			cv7.put(KEY_TEAM, "6");
+			db.insert(DATABASE_TABLE1, null, cv7);
 		}
 		@Override
 		public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {

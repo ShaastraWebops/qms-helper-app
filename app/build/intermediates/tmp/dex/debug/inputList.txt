@@ -1,8 +1,8 @@
-/home/adarsh/Documents/Github/Android/qmshelper_studio/app/build/intermediates/classes/debug
-/home/adarsh/Documents/Github/Android/qmshelper_studio/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-767842f91ed66391e13f56db7f1c0a9cff1e53b1.jar
-/home/adarsh/Documents/Github/Android/qmshelper_studio/app/build/intermediates/pre-dexed/debug/classes-48a3b3edb45e310a249157e2e0b7529460b08d5c.jar
-/home/adarsh/Documents/Github/Android/qmshelper_studio/app/build/intermediates/pre-dexed/debug/classes-caec737ff92b4f5296fd682553fe77835b7cac0b.jar
-/home/adarsh/Documents/Github/Android/qmshelper_studio/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-af0cfb86fc3ccaaa296ebd48d114197ed763158f.jar
-/home/adarsh/Documents/Github/Android/qmshelper_studio/app/build/intermediates/pre-dexed/debug/classes-8e758ff981b7bfcbd18008f6fc9507a5730d1dc2.jar
-/home/adarsh/Documents/Github/Android/qmshelper_studio/app/build/intermediates/pre-dexed/debug/core-3.1.0-95dc5f59103edba5d1bc433ba40879af2447b57e.jar
-/home/adarsh/Documents/Github/Android/qmshelper_studio/app/build/intermediates/pre-dexed/debug/classes-b4381fc4fb85e2928a4b3bba032156fcb5fc9433.jar
+/home/gokulan/AndroidStudioProjects/qms-helper-app/app/build/intermediates/classes/debug
+/home/gokulan/AndroidStudioProjects/qms-helper-app/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-7d0fb09dd4bfc12d59420cc361caf1df3f2f87ce.jar
+/home/gokulan/AndroidStudioProjects/qms-helper-app/app/build/intermediates/pre-dexed/debug/classes-79e3440255fb1378152cdba65965074042836d7c.jar
+/home/gokulan/AndroidStudioProjects/qms-helper-app/app/build/intermediates/pre-dexed/debug/classes-b29deb4036dd55fad7acff8a4e014b1e59aa6fed.jar
+/home/gokulan/AndroidStudioProjects/qms-helper-app/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-b7484529bd084d0a1b9638577e844ade63229534.jar
+/home/gokulan/AndroidStudioProjects/qms-helper-app/app/build/intermediates/pre-dexed/debug/classes-c4a94dd1c52afb12b7cebc44ceccbdeb873b4003.jar
+/home/gokulan/AndroidStudioProjects/qms-helper-app/app/build/intermediates/pre-dexed/debug/core-3.1.0-092b96a67c5ced00c4a8c339462fc6394dbabbba.jar
+/home/gokulan/AndroidStudioProjects/qms-helper-app/app/build/intermediates/pre-dexed/debug/classes-24a0aa0dc221b06dd15715563fe8d12fb623939c.jar
