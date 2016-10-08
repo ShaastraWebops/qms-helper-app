@@ -1,0 +1,8 @@
+/home/adarsh/Documents/Github/Android/qmshelper_studio/app/build/intermediates/classes/debug
+/home/adarsh/Documents/Github/Android/qmshelper_studio/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-767842f91ed66391e13f56db7f1c0a9cff1e53b1.jar
+/home/adarsh/Documents/Github/Android/qmshelper_studio/app/build/intermediates/pre-dexed/debug/classes-48a3b3edb45e310a249157e2e0b7529460b08d5c.jar
+/home/adarsh/Documents/Github/Android/qmshelper_studio/app/build/intermediates/pre-dexed/debug/classes-caec737ff92b4f5296fd682553fe77835b7cac0b.jar
+/home/adarsh/Documents/Github/Android/qmshelper_studio/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-af0cfb86fc3ccaaa296ebd48d114197ed763158f.jar
+/home/adarsh/Documents/Github/Android/qmshelper_studio/app/build/intermediates/pre-dexed/debug/classes-8e758ff981b7bfcbd18008f6fc9507a5730d1dc2.jar
+/home/adarsh/Documents/Github/Android/qmshelper_studio/app/build/intermediates/pre-dexed/debug/core-3.1.0-95dc5f59103edba5d1bc433ba40879af2447b57e.jar
+/home/adarsh/Documents/Github/Android/qmshelper_studio/app/build/intermediates/pre-dexed/debug/classes-b4381fc4fb85e2928a4b3bba032156fcb5fc9433.jar
