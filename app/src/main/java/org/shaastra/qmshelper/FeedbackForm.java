@@ -139,6 +139,16 @@ public class FeedbackForm extends Activity implements OnClickListener {
         Log.d("UniqueID",uid);
 
         eveDb = new EventDatabase(this);
+
+        //Hardcoding event Names
+        eveDb.createEntry("Web Development Workshop", "8", "0");
+        eveDb.createEntry("Junkyard Wars", "9", "0");
+        eveDb.createEntry("How Things Work", "10", "0");
+        eveDb.createEntry("Puzzle Champ", "11", "0");
+        eveDb.createEntry("Paper Plane", "12", "0");
+        eveDb.createEntry("Reverse Coding", "13", "0");
+        eveDb.createEntry("Mixel", "14", "0");
+
         eveDb.open();
         data = eveDb.getData();
         categories = new ArrayList<String>();
