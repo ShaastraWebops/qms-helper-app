@@ -46,7 +46,7 @@ public class EventDatabase {
 			cv1.put(KEY_ROWID,0);
 			cv1.put(KEY_EVENTID, "1");
 			cv1.put(KEY_EVENT, "SURC");
-			cv1.put(KEY_TEAM, "0");
+			cv1.put(KEY_TEAM, "1");
 			db.insert(DATABASE_TABLE1, null, cv1);
 			
 			ContentValues cv2 = new ContentValues();
@@ -60,36 +60,85 @@ public class EventDatabase {
 			cv3.put(KEY_ROWID, 2);
 			cv3.put(KEY_EVENTID, "3");
 			cv3.put(KEY_EVENT, "Elekart");
-			cv3.put(KEY_TEAM, "2");
+			cv3.put(KEY_TEAM, "1");
 			db.insert(DATABASE_TABLE1, null, cv3);
 
 			ContentValues cv4 = new ContentValues();
 			cv4.put(KEY_ROWID, 3);
 			cv4.put(KEY_EVENTID, "4");
 			cv4.put(KEY_EVENT, "Android App Development Workshop");
-			cv4.put(KEY_TEAM, "3");
+			cv4.put(KEY_TEAM, "0");
 			db.insert(DATABASE_TABLE1, null, cv4);
 
 			ContentValues cv5 = new ContentValues();
 			cv5.put(KEY_ROWID, 4);
 			cv5.put(KEY_EVENTID, "5");
-			cv5.put(KEY_EVENT, "Elekart");
-			cv5.put(KEY_TEAM, "4");
+			cv5.put(KEY_EVENT, "Game Development Workshop");
+			cv5.put(KEY_TEAM, "0");
 			db.insert(DATABASE_TABLE1, null, cv5);
 
 			ContentValues cv6 = new ContentValues();
 			cv6.put(KEY_ROWID, 5);
 			cv6.put(KEY_EVENTID, "6");
-			cv6.put(KEY_EVENT, "Game Development Workshop");
-			cv6.put(KEY_TEAM, "5");
+			cv6.put(KEY_EVENT, "PCB Design Workshop");
+			cv6.put(KEY_TEAM, "0");
 			db.insert(DATABASE_TABLE1, null, cv6);
 
 			ContentValues cv7 = new ContentValues();
 			cv7.put(KEY_ROWID, 6);
 			cv7.put(KEY_EVENTID, "7");
-			cv7.put(KEY_EVENT, "PCB Design Workshop");
-			cv7.put(KEY_TEAM, "6");
+			cv7.put(KEY_EVENT, "Python Workshop");
+			cv7.put(KEY_TEAM, "0");
 			db.insert(DATABASE_TABLE1, null, cv7);
+
+			ContentValues cv8 = new ContentValues();
+			cv8.put(KEY_ROWID, 7);
+			cv8.put(KEY_EVENTID, "8");
+			cv8.put(KEY_EVENT, "Web Development Workshop");
+			cv8.put(KEY_TEAM, "0");
+			db.insert(DATABASE_TABLE1, null, cv8);
+
+			ContentValues cv9 = new ContentValues();
+			cv9.put(KEY_ROWID, 8);
+			cv9.put(KEY_EVENTID, "9");
+			cv9.put(KEY_EVENT, "Junkyard Wars");
+			cv9.put(KEY_TEAM, "1");
+			db.insert(DATABASE_TABLE1, null, cv9);
+
+			ContentValues cv10 = new ContentValues();
+			cv10.put(KEY_ROWID, 9);
+			cv10.put(KEY_EVENTID, "10");
+			cv10.put(KEY_EVENT, "How Things Work");
+			cv10.put(KEY_TEAM, "0");
+			db.insert(DATABASE_TABLE1, null, cv10);
+
+			ContentValues cv11 = new ContentValues();
+			cv11.put(KEY_ROWID, 10);
+			cv11.put(KEY_EVENTID, "11");
+			cv11.put(KEY_EVENT, "Puzzle Champ");
+			cv11.put(KEY_TEAM, "0");
+			db.insert(DATABASE_TABLE1, null, cv11);
+
+			ContentValues cv12 = new ContentValues();
+			cv12.put(KEY_ROWID, 11);
+			cv12.put(KEY_EVENTID, "12");
+			cv12.put(KEY_EVENT, "Paper Plane");
+			cv12.put(KEY_TEAM, "0");
+			db.insert(DATABASE_TABLE1, null, cv12);
+
+			ContentValues cv13 = new ContentValues();
+			cv13.put(KEY_ROWID, 12);
+			cv13.put(KEY_EVENTID, "13");
+			cv13.put(KEY_EVENT, "Reverse Coding");
+			cv13.put(KEY_TEAM, "0");
+			db.insert(DATABASE_TABLE1, null, cv13);
+
+			ContentValues cv14 = new ContentValues();
+			cv14.put(KEY_ROWID, 13);
+			cv14.put(KEY_EVENTID, "14");
+			cv14.put(KEY_EVENT, "Mixel");
+			cv14.put(KEY_TEAM, "0");
+			db.insert(DATABASE_TABLE1, null, cv14);
 		}
 		@Override
 		public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {

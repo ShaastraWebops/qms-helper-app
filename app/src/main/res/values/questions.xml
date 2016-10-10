@@ -3,6 +3,104 @@
 <!-- weird way of mapping questions to topics...-->
     <string-array
         name="questions">
+        <item>	SURC FEEDBACK	</item>
+        <item> How satisfied were you with the procedure event has been conducted? \n(1 being not satisfied, 5 being satisfied) </item>
+        <item> How tough was the prelims PS? \n(1 being easiest, 5 being toughest) </item>
+        <item> Was the time sufficient to prepare for the event \n(1 being not at all, 5 being definitely Yes) </item>
+        <item> Rate the quality of participation in the event (prelims)? \n(1 being very poor, 5 being excellent) </item>
+        <item> Is it worth participating considering prize money, brand value of Shaastra and competition,\n(1 being no, 5 being definitely Yes ) </item>
+
+        <item>  Blackbox FEEDBACK</item>
+        <item> The time provided for the test was sufficient. \n(1 being not satisfied, 5 being satisfied) </item>
+        <item> Difficulty level of the paper. \n(1 being easiest, 5 being toughest) </item>
+        <item> Rate the organization of the event \n(1 being very poor, 5 being excellent) </item>
+        <item> Overall how would you rate this workshop \n(1 being poor, 5 being excellent) </item>
+        <item> Would you recommend this event to other people to attend this event in Shaastra 2017 \n(1 being not worth, 5 being definitely) </item>
+
+        <item> Elekart FEEDBACK </item>
+        <item> The time provided for the competition was sufficient. \n(1 being not satisfied, 5 being satisfied) </item>
+        <item> Difficulty level of the event. \n(1 being easiest, 5 being toughest) </item>
+        <item> Rate the organization of the event \n(1 being very poor, 5 being excellent) </item>
+        <item> Overall how would you rate this workshop \n(1 being poor, 5 being excellent) </item>
+        <item> Would you recommend this event to other people to attend this event in Shaastra 2017 \n(1 being not worth, 5 being definitely) </item>
+
+        <item> Android App Development Workshop FEEDBACK</item>
+        <item> Does this workshop cater your needs and interests \n(1 being not agree at all, 5 being strongly agree) </item>
+        <item> Rate the organization of the event \n(1 being poor, 5 being excellent) </item>
+        <item> Rate the instructor\'s knowledge and presentation skill. \n(1 being poor, 5 being excellent) </item>
+        <item> Overall how would you rate this workshop \n(1 being poor, 5 being excellent) </item>
+        <item> Would you recommend this event to other people to attend this event in Shaastra 2017 \n(1 being not worth, 5 being definitely) </item>
+
+        <item> Game Development Workshop FEEDBACK </item>
+        <item> Does this workshop cater your needs and interests \n(1 being not agree at all, 5 being strongly agree) </item>
+        <item> Rate the organization of the event \n(1 being poor, 5 being excellent) </item>
+        <item> Rate the instructor\'s knowledge and presentation skill. \n(1 being poor, 5 being excellent) </item>
+        <item> Overall how would you rate this workshop \n(1 being poor, 5 being excellent) </item>
+        <item> Would you recommend this event to other people to attend this event in Shaastra 2017 \n(1 being not worth, 5 being definitely) </item>
+
+        <item> PCB Design Workshop FEEDBACK </item>
+        <item> Does this workshop cater your needs and interests \n(1 being not agree at all, 5 being strongly agree) </item>
+        <item> Rate the organization of the event \n(1 being poor, 5 being excellent) </item>
+        <item> Rate the instructor\'s knowledge and presentation skill. \n(1 being poor, 5 being excellent) </item>
+        <item> Overall how would you rate this workshop \n(1 being poor, 5 being excellent) </item>
+        <item> Would you recommend this event to other people to attend this event in Shaastra 2017 (1 being not worth, 5 being definitely) </item>
+
+        <item> Python Workshop FEEDBACK</item>
+        <item> Does this workshop cater your needs and interests \n(1 being not agree at all, 5 being strongly agree) </item>
+        <item> Rate the organization of the event \n(1 being poor, 5 being excellent) </item>
+        <item> Rate the instructor\'s knowledge and presentation skill. \n(1 being poor, 5 being excellent) </item>
+        <item> Overall how would you rate this workshop \n(1 being poor, 5 being excellent) </item>
+        <item> Would you recommend this event to other people to attend this event in Shaastra 2017 \n(1 being not worth, 5 being definitely) </item>
+
+        <item> Web Development Workshop FEEDBACK</item>
+        <item> Does this workshop cater your needs and interests \n(1 being not agree at all, 5 being strongly agree) </item>
+        <item> Rate the organization of the event \n(1 being poor, 5 being excellent) </item>
+        <item> Rate the instructor\'s knowledge and presentation skill. \n(1 being poor, 5 being excellent) </item>
+        <item> Overall how would you rate this workshop \n(1 being poor, 5 being excellent) </item>
+        <item> Would you recommend this event to other people to attend this event in Shaastra 2017 \n(1 being not worth, 5 being definitely) </item>
+
+        <item> Junkyard Wars FEEDBACK</item>
+        <item> How satisfied were you with the procedure event has been conducted? \n(1 being not at all satisfied, 5 being highly satisfied) </item>
+        <item> How tough was the prelims PS? \n(1 being pretty easy, 5 being very tough) </item>
+        <item> Was the time sufficient to prepare for the event \n (1 being not at all, 5 being definitely Yes) </item>
+        <item> Rate the quality of participation in the event (prelims)? \n(1 being very poor, 5 being very active) </item>
+        <item> Would you recommend this event to other people to attend this event in Shaastra 2017 \n(1 being not worth, 5 being definitely) </item>
+
+        <item> How things work FEEDBACK</item>
+        <item> The time provided for the test was sufficient. \n(1 being not satisfied, 5 being satisfied) </item>
+        <item> Difficulty level of the event. \n(1 being easiest, 5 being toughest) </item>
+        <item> Rate the organization of the event \n(1 being very poor, 5 being excellent) </item>
+        <item> Rate about the quality of questions asked in the event \n(1 being poor, 5 being excellent) </item>
+        <item> Would you recommend this event to other people to attend this event in Shaastra 2017 \n(1 being not worth, 5 being definitely) </item>
+
+        <item> Puzzle Champ FEEDBACK</item>
+        <item> The time provided for the test was sufficient. \n(1 being not satisfied, 5 being satisfied) </item>
+        <item> Difficulty level of the event. \n(1 being easiest, 5 being toughest) </item>
+        <item> Rate the organization of the event \n(1 being very poor, 5 being excellent) </item>
+        <item> Rate about the quality of questions asked in the event \n(1 being poor, 5 being excellent) </item>
+        <item> Would you recommend this event to other people to attend this event in Shaastra 2017 \n(1 being not worth, 5 being definitely) </item>
+
+        <item> Paper Plane</item>
+        <item> Difficulty level of the event. \n(1 being easiest, 5 being toughest) </item>
+        <item> How satisfied were you with the procedure event has been conducted? \n(1 being not at all satisfied, 5 totally satisfied) </item>
+        <item> Rate the organization of the event \n(1 being poor, 5 being excellent) </item>
+        <item> Was the event successful in terms of enhancing the knowledge about aerodynamics \n(1 being poor, 5 being excellent) </item>
+        <item> Would you recommend this event to other people to attend this event in Shaastra 2017 \n(1 being not worth, 5 being definitely) </item>
+
+        <item> Reversae Coding FEEDBACK</item>
+        <item> The time provided for the test was sufficient. \n(1 being not satisfied, 5 being satisfied) </item>
+        <item> Difficulty level of the event. \n(1 being easiest, 5 being toughest) </item>
+        <item> Rate the organization of the event \n(1 being very poor, 5 being excellent) </item>
+        <item> Rate about the quality of questions asked in the event \n(1 being poor, 5 being excellent) </item>
+        <item> Would you recommend this event to other people to attend this event in Shaastra 2017 \n(1 being not worth, 5 being definitely) </item>
+
+        <item> Mixel FEEDBACK</item>
+        <item> The time provided for the test was sufficient. \n(1 being not satisfied, 5 being satisfied) </item>
+        <item> Difficulty level of the event. \n(1 being easiest, 5 being toughest) </item>
+        <item> Rate the organization of the event \n(1 being very poor, 5 being excellent) </item>
+        <item> Rate about the quality of questions asked in the event \n(1 being poor, 5 being excellent) </item>
+        <item> Would you recommend this event to other people to attend this event in Shaastra 2017 \n(1 being not worth, 5 being definitely) </item>
+
         <item>	SALES AND DISTRIBUTION FEEDBACK	</item>
         <item>	Choice of merchandise	</item>
         <item>	Rate the price of the T shirts	</item>
@@ -18,6 +116,12 @@
         <item>	How comfortable do you rate the registration process?	</item>
         <item>	Over all Shaastra experience	</item>
         <item>	DESIGN FEEDBACK FORM	</item>
+        <item>	Rate the Website Design	</item>
+        <item>	How informative and eye-catching were the posters regarding various activities of Shaastra?	</item>
+        <item>	Experience of Night ambience and Tech ambience 	</item>
+        <item>	Rate the Shaastra teasers/videos	</item>
+        <item>	Overall ambience of Shaastra	</item>
+        <item>		</item>
         <item>	Rate the Website Design	</item>
         <item>	How informative and eye-catching were the posters regarding various activities of Shaastra?	</item>
         <item>	Experience of Night ambience and Tech ambience 	</item>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/home/keerthana/qms-helper-app-master/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/home/adarsh/Documents/Github/Android/qms-helper-app/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string-array name="ExtraDept">
         <item>	Design	</item>
@@ -49,6 +49,20 @@
         <item>Choice 6</item>
     </string-array>
     <string-array name="SpecialForm">
+        <item> SURC </item>
+        <item> Blackbox</item>
+        <item>Elekart</item>
+        <item>Android App Development Workshop</item>
+        <item>Game Dveelopment Workshop</item>
+        <item>PCB Design Workshop</item>
+        <item>Python Workshop</item>
+        <item>Web Development Workshop</item>
+        <item>Junkyard Wars</item>
+        <item>How Things Work</item>
+        <item>Puzzle Champ</item>
+        <item>Paper Plane</item>
+        <item>Reverse Coding</item>
+        <item>Mixel</item>
         <item>	Design	</item>
         <item>	Hospitality	</item>
         <item>	Sales and Distribution	</item>
@@ -63,7 +77,7 @@
         <item>	Video Conference participant	</item>
         <item>	Exhibition	</item>
         <item>	Lecture	</item>
-        <item> Workshop</item>
+        <!--<item> Workshop</item>-->
         <item> Training</item>
         <item> Simulation</item>
         <item> Analysis</item>
@@ -76,9 +90,107 @@
         <item>	Startup Hive Bucket 2	</item>
 
     </string-array>
-    <!-- From: file:/home/keerthana/qms-helper-app-master/app/src/main/res/values/questions.xml -->
+    <!-- From: file:/home/adarsh/Documents/Github/Android/qms-helper-app/app/src/main/res/values/questions.xml -->
     <eat-comment/>
     <string-array name="questions">
+        <item>	SURC FEEDBACK	</item>
+        <item> How satisfied were you with the procedure event has been conducted? \n(1 being not satisfied, 5 being satisfied) </item>
+        <item> How tough was the prelims PS? \n(1 being easiest, 5 being toughest) </item>
+        <item> Was the time sufficient to prepare for the event \n(1 being not at all, 5 being definitely Yes) </item>
+        <item> Rate the quality of participation in the event (prelims)? \n(1 being very poor, 5 being excellent) </item>
+        <item> Is it worth participating considering prize money, brand value of Shaastra and competition,\n(1 being no, 5 being definitely Yes ) </item>
+
+        <item>  Blackbox FEEDBACK</item>
+        <item> The time provided for the test was sufficient. \n(1 being not satisfied, 5 being satisfied) </item>
+        <item> Difficulty level of the paper. \n(1 being easiest, 5 being toughest) </item>
+        <item> Rate the organization of the event \n(1 being very poor, 5 being excellent) </item>
+        <item> Overall how would you rate this workshop \n(1 being poor, 5 being excellent) </item>
+        <item> Would you recommend this event to other people to attend this event in Shaastra 2017 \n(1 being not worth, 5 being definitely) </item>
+
+        <item> Elekart FEEDBACK </item>
+        <item> The time provided for the competition was sufficient. \n(1 being not satisfied, 5 being satisfied) </item>
+        <item> Difficulty level of the event. \n(1 being easiest, 5 being toughest) </item>
+        <item> Rate the organization of the event \n(1 being very poor, 5 being excellent) </item>
+        <item> Overall how would you rate this workshop \n(1 being poor, 5 being excellent) </item>
+        <item> Would you recommend this event to other people to attend this event in Shaastra 2017 \n(1 being not worth, 5 being definitely) </item>
+
+        <item> Android App Development Workshop FEEDBACK</item>
+        <item> Does this workshop cater your needs and interests \n(1 being not agree at all, 5 being strongly agree) </item>
+        <item> Rate the organization of the event \n(1 being poor, 5 being excellent) </item>
+        <item> Rate the instructor\'s knowledge and presentation skill. \n(1 being poor, 5 being excellent) </item>
+        <item> Overall how would you rate this workshop \n(1 being poor, 5 being excellent) </item>
+        <item> Would you recommend this event to other people to attend this event in Shaastra 2017 \n(1 being not worth, 5 being definitely) </item>
+
+        <item> Game Development Workshop FEEDBACK </item>
+        <item> Does this workshop cater your needs and interests \n(1 being not agree at all, 5 being strongly agree) </item>
+        <item> Rate the organization of the event \n(1 being poor, 5 being excellent) </item>
+        <item> Rate the instructor\'s knowledge and presentation skill. \n(1 being poor, 5 being excellent) </item>
+        <item> Overall how would you rate this workshop \n(1 being poor, 5 being excellent) </item>
+        <item> Would you recommend this event to other people to attend this event in Shaastra 2017 \n(1 being not worth, 5 being definitely) </item>
+
+        <item> PCB Design Workshop FEEDBACK </item>
+        <item> Does this workshop cater your needs and interests \n(1 being not agree at all, 5 being strongly agree) </item>
+        <item> Rate the organization of the event \n(1 being poor, 5 being excellent) </item>
+        <item> Rate the instructor\'s knowledge and presentation skill. \n(1 being poor, 5 being excellent) </item>
+        <item> Overall how would you rate this workshop \n(1 being poor, 5 being excellent) </item>
+        <item> Would you recommend this event to other people to attend this event in Shaastra 2017 (1 being not worth, 5 being definitely) </item>
+
+        <item> Python Workshop FEEDBACK</item>
+        <item> Does this workshop cater your needs and interests \n(1 being not agree at all, 5 being strongly agree) </item>
+        <item> Rate the organization of the event \n(1 being poor, 5 being excellent) </item>
+        <item> Rate the instructor\'s knowledge and presentation skill. \n(1 being poor, 5 being excellent) </item>
+        <item> Overall how would you rate this workshop \n(1 being poor, 5 being excellent) </item>
+        <item> Would you recommend this event to other people to attend this event in Shaastra 2017 \n(1 being not worth, 5 being definitely) </item>
+
+        <item> Web Development Workshop FEEDBACK</item>
+        <item> Does this workshop cater your needs and interests \n(1 being not agree at all, 5 being strongly agree) </item>
+        <item> Rate the organization of the event \n(1 being poor, 5 being excellent) </item>
+        <item> Rate the instructor\'s knowledge and presentation skill. \n(1 being poor, 5 being excellent) </item>
+        <item> Overall how would you rate this workshop \n(1 being poor, 5 being excellent) </item>
+        <item> Would you recommend this event to other people to attend this event in Shaastra 2017 \n(1 being not worth, 5 being definitely) </item>
+
+        <item> Junkyard Wars FEEDBACK</item>
+        <item> How satisfied were you with the procedure event has been conducted? \n(1 being not at all satisfied, 5 being highly satisfied) </item>
+        <item> How tough was the prelims PS? \n(1 being pretty easy, 5 being very tough) </item>
+        <item> Was the time sufficient to prepare for the event \n (1 being not at all, 5 being definitely Yes) </item>
+        <item> Rate the quality of participation in the event (prelims)? \n(1 being very poor, 5 being very active) </item>
+        <item> Would you recommend this event to other people to attend this event in Shaastra 2017 \n(1 being not worth, 5 being definitely) </item>
+
+        <item> How things work FEEDBACK</item>
+        <item> The time provided for the test was sufficient. \n(1 being not satisfied, 5 being satisfied) </item>
+        <item> Difficulty level of the event. \n(1 being easiest, 5 being toughest) </item>
+        <item> Rate the organization of the event \n(1 being very poor, 5 being excellent) </item>
+        <item> Rate about the quality of questions asked in the event \n(1 being poor, 5 being excellent) </item>
+        <item> Would you recommend this event to other people to attend this event in Shaastra 2017 \n(1 being not worth, 5 being definitely) </item>
+
+        <item> Puzzle Champ FEEDBACK</item>
+        <item> The time provided for the test was sufficient. \n(1 being not satisfied, 5 being satisfied) </item>
+        <item> Difficulty level of the event. \n(1 being easiest, 5 being toughest) </item>
+        <item> Rate the organization of the event \n(1 being very poor, 5 being excellent) </item>
+        <item> Rate about the quality of questions asked in the event \n(1 being poor, 5 being excellent) </item>
+        <item> Would you recommend this event to other people to attend this event in Shaastra 2017 \n(1 being not worth, 5 being definitely) </item>
+
+        <item> Paper Plane</item>
+        <item> Difficulty level of the event. \n(1 being easiest, 5 being toughest) </item>
+        <item> How satisfied were you with the procedure event has been conducted? \n(1 being not at all satisfied, 5 totally satisfied) </item>
+        <item> Rate the organization of the event \n(1 being poor, 5 being excellent) </item>
+        <item> Was the event successful in terms of enhancing the knowledge about aerodynamics \n(1 being poor, 5 being excellent) </item>
+        <item> Would you recommend this event to other people to attend this event in Shaastra 2017 \n(1 being not worth, 5 being definitely) </item>
+
+        <item> Reversae Coding FEEDBACK</item>
+        <item> The time provided for the test was sufficient. \n(1 being not satisfied, 5 being satisfied) </item>
+        <item> Difficulty level of the event. \n(1 being easiest, 5 being toughest) </item>
+        <item> Rate the organization of the event \n(1 being very poor, 5 being excellent) </item>
+        <item> Rate about the quality of questions asked in the event \n(1 being poor, 5 being excellent) </item>
+        <item> Would you recommend this event to other people to attend this event in Shaastra 2017 \n(1 being not worth, 5 being definitely) </item>
+
+        <item> Mixel FEEDBACK</item>
+        <item> The time provided for the test was sufficient. \n(1 being not satisfied, 5 being satisfied) </item>
+        <item> Difficulty level of the event. \n(1 being easiest, 5 being toughest) </item>
+        <item> Rate the organization of the event \n(1 being very poor, 5 being excellent) </item>
+        <item> Rate about the quality of questions asked in the event \n(1 being poor, 5 being excellent) </item>
+        <item> Would you recommend this event to other people to attend this event in Shaastra 2017 \n(1 being not worth, 5 being definitely) </item>
+
         <item>	SALES AND DISTRIBUTION FEEDBACK	</item>
         <item>	Choice of merchandise	</item>
         <item>	Rate the price of the T shirts	</item>
@@ -94,6 +206,12 @@
         <item>	How comfortable do you rate the registration process?	</item>
         <item>	Over all Shaastra experience	</item>
         <item>	DESIGN FEEDBACK FORM	</item>
+        <item>	Rate the Website Design	</item>
+        <item>	How informative and eye-catching were the posters regarding various activities of Shaastra?	</item>
+        <item>	Experience of Night ambience and Tech ambience 	</item>
+        <item>	Rate the Shaastra teasers/videos	</item>
+        <item>	Overall ambience of Shaastra	</item>
+        <item>		</item>
         <item>	Rate the Website Design	</item>
         <item>	How informative and eye-catching were the posters regarding various activities of Shaastra?	</item>
         <item>	Experience of Night ambience and Tech ambience 	</item>
@@ -236,13 +354,13 @@
         <item>	3. How was your overall experience of the Startup Hive?	</item>
 
     </string-array>
-    <!-- From: file:/home/keerthana/qms-helper-app-master/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/home/adarsh/Documents/Github/Android/qms-helper-app/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string-array name="skipevent">
         <item>Wright</item>
         <item>Circuit</item>
     </string-array>
-    <!-- From: file:/home/keerthana/qms-helper-app-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/home/adarsh/Documents/Github/Android/qms-helper-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -303,7 +421,7 @@
     <color name="secondary_text_disabled_material_light">#24000000</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <!-- From: file:/home/keerthana/qms-helper-app-master/app/build/intermediates/exploded-aar/me.dm7.barcodescanner/core/1.5/res/values/values.xml -->
+    <!-- From: file:/home/adarsh/Documents/Github/Android/qms-helper-app/app/build/intermediates/exploded-aar/me.dm7.barcodescanner/core/1.5/res/values/values.xml -->
     <eat-comment/>
     <color name="viewfinder_border">#ffafed44</color>
     <color name="viewfinder_laser">#ffcc0000</color>
@@ -331,7 +449,7 @@
     <declare-styleable name="Toolbar"><attr format="reference" name="titleTextAppearance"/><attr format="reference" name="subtitleTextAppearance"/><attr name="title"/><attr name="subtitle"/><attr name="android:gravity"/><attr format="dimension" name="titleMargins"/><attr format="dimension" name="titleMarginStart"/><attr format="dimension" name="titleMarginEnd"/><attr format="dimension" name="titleMarginTop"/><attr format="dimension" name="titleMarginBottom"/><attr name="contentInsetStart"/><attr name="contentInsetEnd"/><attr name="contentInsetLeft"/><attr name="contentInsetRight"/><attr format="dimension" name="maxButtonHeight"/><attr format="reference" name="theme"/><attr format="reference" name="collapseIcon"/><attr format="string" name="collapseContentDescription"/><attr name="popupTheme"/><attr format="reference" name="navigationIcon"/><attr format="string" name="navigationContentDescription"/><attr name="android:minHeight"/></declare-styleable>
     <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/></declare-styleable>
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
-    <!-- From: file:/home/keerthana/qms-helper-app-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/home/adarsh/Documents/Github/Android/qms-helper-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
     <dimen name="abc_action_bar_default_padding_material">4dp</dimen>
@@ -370,11 +488,11 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <!-- From: file:/home/keerthana/qms-helper-app-master/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/home/adarsh/Documents/Github/Android/qms-helper-app/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/home/keerthana/qms-helper-app-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/home/adarsh/Documents/Github/Android/qms-helper-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
     <item name="dialog_fixed_height_minor" type="dimen">100%</item>
@@ -392,11 +510,11 @@
     <item name="split_action_bar" type="id"/>
     <item name="up" type="id"/>
     <integer name="abc_max_action_buttons">2</integer>
-    <!-- From: file:/home/keerthana/qms-helper-app-master/app/build/intermediates/exploded-aar/me.dm7.barcodescanner/core/1.5/res/values/values.xml -->
+    <!-- From: file:/home/adarsh/Documents/Github/Android/qms-helper-app/app/build/intermediates/exploded-aar/me.dm7.barcodescanner/core/1.5/res/values/values.xml -->
     <eat-comment/>
     <integer name="viewfinder_border_length">60</integer>
     <integer name="viewfinder_border_width">4</integer>
-    <!-- From: file:/home/keerthana/qms-helper-app-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/home/adarsh/Documents/Github/Android/qms-helper-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
@@ -414,7 +532,7 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <!-- From: file:/home/keerthana/qms-helper-app-master/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/home/adarsh/Documents/Github/Android/qms-helper-app/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="app_name">Shaastra QMS Assistant</string>
     <string name="event_csv">/sdcard/eventregistration_data.csv</string>
@@ -426,7 +544,7 @@
     <string name="id_prefix"/>
     <string name="registeredfaq">"Tips:\n1.This app does not change the password for existing accounts.\n2.Since every account is tied to an email, the email cannot be changed. All other details are editable.\n3.Tap \"Clear All Fields\" to clear everything except the email."</string>
     <string name="spinner_title">no of tickets</string>
-    <!-- From: file:/home/keerthana/qms-helper-app-master/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/home/adarsh/Documents/Github/Android/qms-helper-app/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
@@ -438,7 +556,7 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-    <!-- From: file:/home/keerthana/qms-helper-app-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/home/adarsh/Documents/Github/Android/qms-helper-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance">
         <item name="android:textColor">?android:textColorPrimary</item>

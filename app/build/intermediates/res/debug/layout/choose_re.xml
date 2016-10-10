@@ -9,4 +9,4 @@
         android:layout_weight="1" 
         android:id="@android:id/list">
         </ListView>
-</LinearLayout><!-- From: file:/home/keerthana/qms-helper-app-master/app/src/main/res/layout/choose_re.xml -->
+</LinearLayout><!-- From: file:/home/adarsh/Documents/Github/Android/qms-helper-app/app/src/main/res/layout/choose_re.xml -->

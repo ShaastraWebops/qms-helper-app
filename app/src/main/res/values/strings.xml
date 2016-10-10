@@ -66,6 +66,20 @@
     </string-array>
     <string-array
         name="SpecialForm">
+        <item> SURC </item>
+        <item> Blackbox</item>
+        <item>Elekart</item>
+        <item>Android App Development Workshop</item>
+        <item>Game Dveelopment Workshop</item>
+        <item>PCB Design Workshop</item>
+        <item>Python Workshop</item>
+        <item>Web Development Workshop</item>
+        <item>Junkyard Wars</item>
+        <item>How Things Work</item>
+        <item>Puzzle Champ</item>
+        <item>Paper Plane</item>
+        <item>Reverse Coding</item>
+        <item>Mixel</item>
         <item>	Design	</item>
         <item>	Hospitality	</item>
         <item>	Sales and Distribution	</item>
@@ -80,7 +94,7 @@
         <item>	Video Conference participant	</item>
         <item>	Exhibition	</item>
         <item>	Lecture	</item>
-        <item> Workshop</item>
+        <!--<item> Workshop</item>-->
         <item> Training</item>
         <item> Simulation</item>
         <item> Analysis</item>

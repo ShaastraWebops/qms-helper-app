@@ -138,18 +138,18 @@ public class FeedbackForm extends Activity implements OnClickListener {
         buttonFlush.setOnClickListener(this);
         Log.d("UniqueID",uid);
 
-        eveDb = new EventDatabase(this);
+        eveDb = new EventDatabase(this).open();
 
         //Hardcoding event Names
-        eveDb.createEntry("Web Development Workshop", "8", "0");
-        eveDb.createEntry("Junkyard Wars", "9", "0");
-        eveDb.createEntry("How Things Work", "10", "0");
-        eveDb.createEntry("Puzzle Champ", "11", "0");
-        eveDb.createEntry("Paper Plane", "12", "0");
-        eveDb.createEntry("Reverse Coding", "13", "0");
-        eveDb.createEntry("Mixel", "14", "0");
+//        eveDb.createEntry("Web Development Workshop", "8", "0");
+//        eveDb.createEntry("Junkyard Wars", "9", "0");
+//        eveDb.createEntry("How Things Work", "10", "0");
+//        eveDb.createEntry("Puzzle Champ", "11", "0");
+//        eveDb.createEntry("Paper Plane", "12", "0");
+//        eveDb.createEntry("Reverse Coding", "13", "0");
+//        eveDb.createEntry("Mixel", "14", "0");
 
-        eveDb.open();
+        // eveDb.open();
         data = eveDb.getData();
         categories = new ArrayList<String>();
         for (int i = 0; i < data[0].length; i++) {
@@ -233,7 +233,7 @@ public class FeedbackForm extends Activity implements OnClickListener {
         ArrayList<String> qList = new ArrayList<String>();
         int event_there=categories.indexOf(event);
         boolean flag=false;
-        //Log.d("in the setis_team method?","yep");
+        Log.d("in the setis_?",String.valueOf(event_there));
         if(event_there!=-1) {
             questionsLayout.removeViews (0, questionsLayout.getChildCount());
             pos=event_there;
@@ -297,7 +297,7 @@ public class FeedbackForm extends Activity implements OnClickListener {
 
 
 
-    @SuppressLint("NewApi")
+    // @SuppressLint("NewApi")
 	@Override
 	public void onClick(View v) {
 
