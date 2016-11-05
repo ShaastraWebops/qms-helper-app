@@ -139,6 +139,20 @@ public class EventDatabase {
 			cv14.put(KEY_EVENT, "Mixel");
 			cv14.put(KEY_TEAM, "0");
 			db.insert(DATABASE_TABLE1, null, cv14);
+
+			ContentValues cv15 = new ContentValues();
+			cv15.put(KEY_ROWID, 14);
+			cv15.put(KEY_EVENTID, "15");
+			cv15.put(KEY_EVENT, "BugCrush");
+			cv15.put(KEY_TEAM, "0");
+			db.insert(DATABASE_TABLE1, null, cv15);
+
+			ContentValues cv16 = new ContentValues();
+			cv16.put(KEY_ROWID, 15);
+			cv16.put(KEY_EVENTID, "16");
+			cv16.put(KEY_EVENT, "Research in 2 Min");
+			cv16.put(KEY_TEAM, "0");
+			db.insert(DATABASE_TABLE1, null, cv16);
 		}
 		@Override
 		public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {

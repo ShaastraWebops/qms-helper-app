@@ -87,7 +87,7 @@
         <item> Was the event successful in terms of enhancing the knowledge about aerodynamics \n(1 being poor, 5 being excellent) </item>
         <item> Would you recommend this event to other people to attend this event in Shaastra 2017 \n(1 being not worth, 5 being definitely) </item>
 
-        <item> Reversae Coding FEEDBACK</item>
+        <item> Reverse Coding FEEDBACK</item>
         <item> The time provided for the test was sufficient. \n(1 being not satisfied, 5 being satisfied) </item>
         <item> Difficulty level of the event. \n(1 being easiest, 5 being toughest) </item>
         <item> Rate the organization of the event \n(1 being very poor, 5 being excellent) </item>
@@ -100,6 +100,20 @@
         <item> Rate the organization of the event \n(1 being very poor, 5 being excellent) </item>
         <item> Rate about the quality of questions asked in the event \n(1 being poor, 5 being excellent) </item>
         <item> Would you recommend this event to other people to attend this event in Shaastra 2017 \n(1 being not worth, 5 being definitely) </item>
+
+        <item> BugCrush FEEDBACK</item>
+        <item> What was the difficulty level of event? (1 being poor, 5 being excellent)</item>
+        <item> Would you recommend conducting this event in Shaastra? (1 being not worth, 5 being definitely)</item>
+        <item> The time provided for the competition was sufficient. (1 being not agree at all)</item>
+        <item> Rate the organization of the event  (1 being not agree at satisfied)</item>
+        <item> Were your expectations of the event met ( 1 being not at all)</item>
+
+        <item> Research in 2 Min FEEDBACK</item>
+        <item> How satisfied were you with the procedure event has been conducted? (1 being not satisfied, 5 being satisfied)</item>
+        <item> The time provided for the competition was sufficient. (1 being not agree at all)</item>
+        <item> Event serves its purpose of expanding opportunities about research (1 being not agree at all)</item>
+        <item> Are you satisfied with the Judging Criteria and Result.  (1 being not agree at all)</item>
+        <item> Would you recommend this event to other people to attend this event in Shaastra 2017 (1 being not worth, 5 being definitely)</item>
 
         <item>	SALES AND DISTRIBUTION FEEDBACK	</item>
         <item>	Choice of merchandise	</item>

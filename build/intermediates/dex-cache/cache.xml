@@ -2,53 +2,53 @@
 <items version="2" >
 
     <item
-        jar="/home/adarsh/Documents/Github/Android/qms-helper-app/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="/home/adarsh/Documents/Github/Android/qms-helper-app/app/build/intermediates/pre-dexed/debug/classes-7b7a9d7a195328d9bdedca7678901d218e360de7.jar" />
-    </item>
-    <item
-        jar="/home/adarsh/Documents/Github/Android/qms-helper-app/app/build/intermediates/exploded-aar/me.dm7.barcodescanner/core/1.5/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="85fd787f604f8fc6564ff7d4cce05f6522f180ab">
-        <dex dex="/home/adarsh/Documents/Github/Android/qms-helper-app/app/build/intermediates/pre-dexed/debug/classes-e204096a3f7825ec2c19403baf8f73ce3d1fdb5b.jar" />
-    </item>
-    <item
-        jar="/home/adarsh/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.1.0/908e18674f895e3e1fa8f4a954b8c637a23d2801/core-3.1.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="908e18674f895e3e1fa8f4a954b8c637a23d2801">
-        <dex dex="/home/adarsh/Documents/Github/Android/qms-helper-app/app/build/intermediates/pre-dexed/debug/core-3.1.0-95dc5f59103edba5d1bc433ba40879af2447b57e.jar" />
-    </item>
-    <item
-        jar="/home/adarsh/Documents/Github/Android/qms-helper-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="/home/adarsh/Documents/Github/Android/qms-helper-app/app/build/intermediates/pre-dexed/debug/classes-50df7cd31aa05a6cabea4a4634b383b3e47715fe.jar" />
-    </item>
-    <item
-        jar="/home/adarsh/Documents/Github/Android/qms-helper-app/app/build/intermediates/exploded-aar/me.dm7.barcodescanner/zxing/1.5/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="2aa015d05422639a5ff9c861488b56e447a77b4b">
-        <dex dex="/home/adarsh/Documents/Github/Android/qms-helper-app/app/build/intermediates/pre-dexed/debug/classes-0cce24d150d34ef5a3b50beea59dcd29308abe3e.jar" />
-    </item>
-    <item
-        jar="/home/adarsh/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jar="/home/gokulan/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/home/adarsh/Documents/Github/Android/qms-helper-app/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-767842f91ed66391e13f56db7f1c0a9cff1e53b1.jar" />
+        <dex dex="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-7d0fb09dd4bfc12d59420cc361caf1df3f2f87ce.jar" />
     </item>
     <item
-        jar="/home/adarsh/Documents/Github/Android/qms-helper-app/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jar="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="/home/adarsh/Documents/Github/Android/qms-helper-app/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-a19ac9d5b849e06bd91e1c3ee353e47a5aa876d5.jar" />
+        <dex dex="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-08d37c882fa4962afeb94ccf80bf41ba05071b8a.jar" />
+    </item>
+    <item
+        jar="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/pre-dexed/debug/classes-cf64e90e9c9e3af1fc7f692ddcd86eba2047e1ce.jar" />
+    </item>
+    <item
+        jar="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/exploded-aar/me.dm7.barcodescanner/core/1.5/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="85fd787f604f8fc6564ff7d4cce05f6522f180ab">
+        <dex dex="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/pre-dexed/debug/classes-a4a9c0bfcf596a7a0f0d33576f17e7d4ad739502.jar" />
+    </item>
+    <item
+        jar="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/pre-dexed/debug/classes-197b718e5e8fb3f3a759d028313429584d960332.jar" />
+    </item>
+    <item
+        jar="/home/gokulan/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.1.0/908e18674f895e3e1fa8f4a954b8c637a23d2801/core-3.1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="908e18674f895e3e1fa8f4a954b8c637a23d2801">
+        <dex dex="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/pre-dexed/debug/core-3.1.0-092b96a67c5ced00c4a8c339462fc6394dbabbba.jar" />
+    </item>
+    <item
+        jar="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/exploded-aar/me.dm7.barcodescanner/zxing/1.5/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2aa015d05422639a5ff9c861488b56e447a77b4b">
+        <dex dex="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/pre-dexed/debug/classes-c0a7e39c676e029d49424fb45f2961130f6cb2ce.jar" />
     </item>
 
 </items>
