@@ -12,6 +12,7 @@ import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.LayerDrawable;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.provider.Settings.Secure;
 import android.text.Editable;
@@ -48,6 +49,7 @@ import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
+import org.json.JSONObject;
 import org.shaastra.qmshelper.reused.Database;
 import org.shaastra.qmshelper.reused.EventDatabase;
 
@@ -64,11 +66,12 @@ import java.util.List;
  * @author aditya.polymath & snugghash 
  */
 public class FeedbackForm extends Activity implements OnClickListener {
-	String  user, pass,userid="anon";
+    private String cmnts;
+    String  user, pass,userid="anon";
 	String[][] data = new String[6][];
 	Spinner spinner;
     RatingBar ratingbar;
-
+    String event;
     String uid;
 
     AutoCompleteTextView aut;
@@ -229,7 +232,7 @@ public class FeedbackForm extends Activity implements OnClickListener {
 
     public void chooseQuestions(){
 
-        String event=aut.getText().toString();
+        event=aut.getText().toString();
         ArrayList<String> qList = new ArrayList<String>();
         int event_there=categories.indexOf(event);
         boolean flag=false;
@@ -522,11 +525,69 @@ public class FeedbackForm extends Activity implements OnClickListener {
         db.createEntry(userid, data[1][pos],
                 data[0][pos],q,comments.getText().toString(),sent);
         Log.i("STORE", "DONE");
-        Toast.makeText(
-                getApplicationContext(),
-                "Feedback Stored!\nThank you.", Toast.LENGTH_LONG).show();
+//        Toast.makeText(
+//                getApplicationContext(),
+//                "Feedback Stored!\nThank you.", Toast.LENGTH_LONG).show();
         db.close();
+        new SubmitFeedback(String.valueOf(q[0]), String.valueOf(q[1]), String.valueOf(q[2]), String.valueOf(q[3]), String.valueOf(q[4])).execute();
         NextFeedback();
+    }
+
+    public class SubmitFeedback extends AsyncTask<Void, Void, Boolean> {
+
+        JSONObject ResponseJSON;
+        String q1, q2, q3, q4, q5;
+
+        SubmitFeedback(String r1, String r2, String r3, String r4, String r5) {
+            q1 = r1;
+            q2 = r2;
+            q3 = r3;
+            q4 = r4;
+            q5 = r5;
+            cmnts = comments.getText().toString();
+        }
+
+        @Override
+        protected Boolean doInBackground(Void... params) {
+            // TODO: attempt authentication against a network service.
+
+//            runOnUiThread(new Runnable() {
+//                @Override
+//                public void run() {
+            ArrayList<PostParam> iPostParams = new ArrayList<PostParam>();
+            PostParam postemail = new PostParam("event_name", event);
+            iPostParams.add(postemail);
+            PostParam postcomment = new PostParam("comment", cmnts);
+            iPostParams.add(postcomment);
+            PostParam postrating1 = new PostParam("q1", q1);
+            iPostParams.add(postrating1);
+            PostParam postrating2 = new PostParam("q2", q2);
+            iPostParams.add(postrating2);
+            PostParam postrating3 = new PostParam("q3", q3);
+            iPostParams.add(postrating3);
+            PostParam postrating4 = new PostParam("q4", q4);
+            iPostParams.add(postrating4);
+            PostParam postrating5 = new PostParam("q5", q5);
+            iPostParams.add(postrating5);
+            ResponseJSON = PostRequest.execute("http://shaastra.org:8001/api/feedbacks", iPostParams);
+            Log.d("RESPONSE", ResponseJSON.toString());
+
+            // TODO: register the new account here.
+//                }
+//            });
+            return true;
+        }
+
+        @Override
+        protected void onPostExecute(final Boolean success) {
+            Toast.makeText(getApplicationContext(), "Thank you for the feedback", Toast.LENGTH_LONG).show();
+            finish();
+        }
+
+        @Override
+        protected void onCancelled() {
+//            mAuthTask = null;
+        }
     }
 /*
 	private void sendData() {
