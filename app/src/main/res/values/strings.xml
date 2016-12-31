@@ -66,6 +66,9 @@
     </string-array>
     <string-array
         name="SpecialForm">
+        <item>Fire N Ice</item>
+        <item>Hindu-Roofandfloor Code Marathon</item>
+        <item>Junkyard Wars</item>
         <item> SURC </item>
         <item> Blackbox</item>
         <item>Elekart</item>
@@ -82,31 +85,6 @@
         <item>Mixel</item>
         <item>BugCrush</item>
         <item>Research in 2 Min</item>
-        <item>	Design	</item>
-        <item>	Hospitality	</item>
-        <item>	Sales and Distribution	</item>
-        <item>	Prize and Prize money	</item>
-        <item>	Speakers	</item>
-        <item>	Sponsorship Lec</item>
-        <item>Sponsorship Company</item>
-        <item>	Catering</item>
-        <item>	General facilities</item>
-        <item>	Transportation	</item>
-        <item>	VIP care	</item>
-        <item>	Video Conference participant	</item>
-        <item>	Exhibition	</item>
-        <item>	Lecture	</item>
-        <!--<item> Workshop</item>-->
-        <item> Training</item>
-        <item> Simulation</item>
-        <item> Analysis</item>
-        <item> Gaming Zone</item>
-        <item> Entrepreneurship Confluence </item>
-        <!--  <item>	Events 	</item> -->
-        <item>	Shows	</item>
-        <item> Symposium </item>
-        <item>	Startup Hive Bucket 1	</item>
-        <item>	Startup Hive Bucket 2	</item>
 
     </string-array>
 </resources>

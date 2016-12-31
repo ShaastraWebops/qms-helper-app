@@ -90,7 +90,7 @@ private int year, month, day,age;
 	      branch_spinner.setAdapter(branch_data); 
 	      
 	      idTV=(TextView) findViewById(R.id.idTV);
-	      faq=(TextView) findViewById(R.id.faq);
+//	      faq=(TextView) findViewById(R.id.faq);
 	      
 	      		fnameET=(EditText) findViewById(R.id.fname);
 				lnameET=(EditText) findViewById(R.id.lname);

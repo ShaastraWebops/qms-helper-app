@@ -7,6 +7,7 @@ import java.util.List;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.shaastra.qmshelper.Register_old.SubmitRegistration;
@@ -57,11 +58,12 @@ import android.widget.Toast;
 public class NewUser extends FragmentActivity implements OnDateSetListener   {
 	
 EditText fnameET,lnameET,emailET,crollET,mobnumET ,bcodeET,cbranchET,cnameET,cityET,passwordET;
-Spinner branch_spinner;
+Spinner branch_spinner, college_spinner;
 RadioGroup genderRG,accomRG;
 TextView dateView,idTV,faq;
 Button updatebut,regbut;
-
+    JSONObject response, json;
+    JSONArray res;
 String gender, dobS,email,accomodation, fname ,lname ,croll,mobnum,cbranch,cname,city,password;
 String[] branches="School\nArts\nAccounting\nApplied Mechanics\nMechatronics\nAerospace Engineering\nAutomobile Engineering\nBiotech / Biochemical / Biomedical\nBiology\nCeramic Engineering\nChemical Engineering\nChemistry\nDesign\nEngineering Design\nCivil Engineering\nComputer Science and Engineering\nElectronics and Communications Engineering\nElectrical and Electronics Engineering\nElectrical Engineering\nElectronics and Instrumentation Engineering\nEngineering Physics\nEconomics\nFashion Technology\nHumanities and Social Sciences\nIndustrial Production\nProduction\nInformation Technology and Information Science\nManagement\nManufacturing\nMathematics\nMetallurgy and Material Science\nMechanical Engineering\nOcean Engineering and Naval Architecture\nPhysics\nTelecom\nTextile Engineering\nOthers".split("\n");
 ArrayAdapter<String> branch_data;
@@ -69,6 +71,7 @@ private Calendar calendar,dob;
     int request_Code=1;
 
 Singleton app;
+List<String> collegeids;
 
 private int year, month, day,age;
 	@Override
@@ -90,29 +93,31 @@ private int year, month, day,age;
 	      branch_data= new ArrayAdapter<String>(NewUser.this,android.R.layout.simple_spinner_item, branches);
 	      dateView.setText("DOB : --/--/----"); 
 	      //dateView.setText("DOB : " + day+"/"+(month+1)+"/"+year);
-	      gender="M";
-	      accomodation="0";
+	      gender="1";
+	      accomodation="false";
 	      setTitle("New User");
 	      //showDate(year, month, day);
 	      branch_spinner=(Spinner)findViewById(R.id.branch_spinner);
+          college_spinner=(Spinner)findViewById(R.id.college_spinner);
 	      branch_data.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 	      branch_spinner.setAdapter(branch_data); 
 	      
 	      idTV=(TextView) findViewById(R.id.idTV);
-	      faq=(TextView) findViewById(R.id.faq);
+//	      faq=(TextView) findViewById(R.id.faq);
 	      		fnameET=(EditText) findViewById(R.id.fname);
 				lnameET=(EditText) findViewById(R.id.lname);
 				emailET =(EditText) findViewById(R.id.emailid_reg);
+                passwordET =(EditText) findViewById(R.id.password_reg);
 				crollET =(EditText) findViewById(R.id.croll);
 				mobnumET =(EditText) findViewById(R.id.mobnum);
 				cbranchET =(EditText) findViewById(R.id.cbranch);
 				cnameET =(EditText) findViewById(R.id.cname);
 				cityET =(EditText) findViewById(R.id.city);
-				passwordET =(EditText) findViewById(R.id.pw);
+//				passwordET =(EditText) findViewById(R.id.pw);
 				bcodeET=(EditText) findViewById(R.id.bcodeET);
 				
-				idTV.setText(getResources().getString(R.string.id_name)+" : "+getResources().getString(R.string.id_default));
-				faq.setText(getResources().getString(R.string.faq));
+//				idTV.setText(getResources().getString(R.string.id_name)+" : "+getResources().getString(R.string.id_default));
+//				faq.setText(getResources().getString(R.string.faq));
 				emailET.setEnabled(true);
 		boolean a = false;
 		ConnectivityManager connectivityManager = (ConnectivityManager) this
@@ -165,11 +170,11 @@ private int year, month, day,age;
 				switch(checkedId) {
 				case R.id.Male:
 		            if (checked)
-		                gender="M";
+		                gender="1";
 		            break;
 		        case R.id.Female:
 		            if (checked)
-		                gender="F";
+		                gender="0";
 		            break;
 				}
 				
@@ -185,11 +190,11 @@ private int year, month, day,age;
 				switch(checkedId) {
 		        case R.id.want:
 		            if (checked)
-		                accomodation="1";
+		                accomodation="true";
 		            break;
 		        case R.id.notwanted:
 		            if (checked)
-		                accomodation="0";
+		                accomodation="false";
 		            break;
 				
 				}
@@ -208,7 +213,7 @@ regbut.setOnClickListener(new View.OnClickListener() {
 			fname =fnameET.getText().toString();
 			lname =lnameET.getText().toString();
 			email =emailET.getText().toString();
-			password =email;//passwordET.getText().toString();
+			password =passwordET.getText().toString();
 			if(fname.isEmpty()||lname.isEmpty()||email.isEmpty())
 				Toast.makeText(getApplicationContext(), "Please fill in Name and email ID.", Toast.LENGTH_LONG).show();
 			else if(!isValidEmailAddress(email))
@@ -217,10 +222,10 @@ regbut.setOnClickListener(new View.OnClickListener() {
 				Toast.makeText(getApplicationContext(), "The password should have at least 6 characters!", Toast.LENGTH_LONG).show();
 				}*/
 			else{
-				if(emailET.isEnabled()){
-					new SubmitRegistration().execute();
+//				if(emailET.isEnabled()){
+//					new SubmitRegistration().execute();
 					
-					}
+//					}
 				
 				new UpdateDetails().execute();
 			}
@@ -229,6 +234,8 @@ regbut.setOnClickListener(new View.OnClickListener() {
 		}
 	}});
 	regbut.setVisibility(View.VISIBLE);
+
+        new FetchEventTask().execute("http://shaastra.org:8001/api/colleges");
 	}
 
 	@Override
@@ -322,7 +329,7 @@ regbut.setOnClickListener(new View.OnClickListener() {
 		genderRG.check(R.id.Male);
 		accomRG.check(R.id.notwanted);
 		emailET.setEnabled(true);
-		idTV.setText(getResources().getString(R.string.id_name)+" : "+getResources().getString(R.string.id_default));
+		idTV.setText("");
 		uid.edit().clear().commit();
 		updatebut.setVisibility(View.GONE);
 		regbut.setVisibility(View.VISIBLE);
@@ -428,6 +435,36 @@ regbut.setOnClickListener(new View.OnClickListener() {
 		}*/
 	}
 
+	class FetchEventTask extends AsyncTask<String, Void, JSONObject>{
+
+		protected JSONObject doInBackground(String... urls){
+			response = GetRequest.execute(urls[0], NewUser.this, null);
+			Log.i("URL", urls[0]);
+			//Log.i("Response", String.valueOf(response));
+			return response;
+		}
+
+		protected void onPostExecute(JSONObject response){
+            List<String> str = new ArrayList<>();
+            collegeids = new ArrayList<>();
+			try {
+				final String eventname = response.getJSONObject("data").toString();
+                Log.d("blabla", eventname);
+                res = response.getJSONObject("data").getJSONArray("response");
+                Log.d("Length", String.valueOf(res.length()));
+                for(int j=0; j<res.length(); j++) {
+                    str.add(j, res.getJSONObject(j).getString("collegeName"));
+                    collegeids.add(j, res.getJSONObject(j).getString("_id"));
+                }
+                ArrayAdapter coll_data= new ArrayAdapter<String>(NewUser.this, android.R.layout.simple_spinner_item, str);
+                coll_data.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                college_spinner.setAdapter(coll_data);
+            } catch (JSONException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
 	class UpdateDetails extends AsyncTask<String, String, String> {
 		private ProgressDialog pDialog;
 		String token;
@@ -435,6 +472,19 @@ regbut.setOnClickListener(new View.OnClickListener() {
 		@Override
 		protected void onPreExecute() {
 			super.onPreExecute();
+
+            fname =fnameET.getText().toString();
+            lname =lnameET.getText().toString();
+            email =emailET.getText().toString();
+            croll =crollET.getText().toString();
+            mobnum =mobnumET.getText().toString();
+            cbranch =branch_spinner.getSelectedItem().toString();//cbranchET.getText().toString();
+            cname = collegeids.get(college_spinner.getSelectedItemPosition());
+//            cname =cnameET.getText().toString();
+            city =cityET.getText().toString();
+            password =passwordET.getText().toString();
+//            bcode =bcodeET.getText().toString();
+
 			pDialog = new ProgressDialog(NewUser.this);
 			pDialog.setMessage("Updating Details");
 			pDialog.setIndeterminate(false);
@@ -447,16 +497,8 @@ regbut.setOnClickListener(new View.OnClickListener() {
 		protected String doInBackground(String... params) {
 			// TODO Auto-generated method stub
 			
-			final List<NameValuePair> paramse = new ArrayList<NameValuePair>();
-			String fname =fnameET.getText().toString();
-			String lname =lnameET.getText().toString();
-			String croll =crollET.getText().toString();
-			String mobnum =mobnumET.getText().toString();
-			String cbranch =branch_spinner.getSelectedItem().toString();//cbranchET.getText().toString();
-			String cname =cnameET.getText().toString();
-			String city =cityET.getText().toString();
-			String password =passwordET.getText().toString();
-			String bcode =bcodeET.getText().toString();
+			ArrayList<PostParam> paramse = new ArrayList<PostParam>();
+
 			Calendar cur=Calendar.getInstance();
 			cur.setTime(new Date());
 			int age = cur.get(Calendar.YEAR) - dob.get(Calendar.YEAR);
@@ -475,56 +517,54 @@ regbut.setOnClickListener(new View.OnClickListener() {
 				return null;}
 				*/
 			if(!fname.isEmpty())
-			paramse.add(new BasicNameValuePair("first_name", fname));
+			paramse.add(new PostParam("name", fname));
 			if(!lname.isEmpty())
-			paramse.add(new BasicNameValuePair("last_name", lname));
-			if(!croll.isEmpty())
-			paramse.add(new BasicNameValuePair("college_roll", croll));
+			paramse.add(new PostParam("secondName", lname));
+            if(!email.isEmpty())
+            paramse.add(new PostParam("email", email));
+//			if(!croll.isEmpty())
+//			paramse.add(new BasicNameValuePair("college_roll", croll));
 			if(!mobnum.isEmpty())
-			paramse.add(new BasicNameValuePair("mobile_number", mobnum));
+			paramse.add(new PostParam("phoneNumber", mobnum));
 			if(!cbranch.isEmpty())
-			paramse.add(new BasicNameValuePair("branch", cbranch));
+			paramse.add(new PostParam("branch", cbranch));
 			if(!cname.isEmpty())
-			paramse.add(new BasicNameValuePair("college_text", cname));
+			paramse.add(new PostParam("college", cname));
 			if(!city.isEmpty())
-			paramse.add(new BasicNameValuePair("city", city));
-			if(!bcode.isEmpty())
-				paramse.add(new BasicNameValuePair("barcode", bcode));
+			paramse.add(new PostParam("city", city));
+//			if(!bcode.isEmpty())
+//				paramse.add(new BasicNameValuePair("barcode", bcode));
 			if(!password.isEmpty())
-			paramse.add(new BasicNameValuePair("password", password));
-			paramse.add(new BasicNameValuePair("want_accomodation", accomodation));
-			paramse.add(new BasicNameValuePair("gender", gender));
+			paramse.add(new PostParam("password", password));
+			paramse.add(new PostParam("wantAccomodation", accomodation));
+			paramse.add(new PostParam("gender", gender));
 			Log.d("date",DOBstring);
 			Log.d("age",Integer.toString(age));
-			Log.d("bcode",bcode);
+//			Log.d("bcode",bcode);
 			if(age!=0){
-			paramse.add(new BasicNameValuePair("dob", DOBstring));
-			paramse.add(new BasicNameValuePair("age", Integer.toString(age)));
+			paramse.add(new PostParam("dob", DOBstring));
+			paramse.add(new PostParam("age", Integer.toString(age)));
 			}
 			SharedPreferences uid = getApplicationContext().getSharedPreferences("uid",0);
-			token = uid.getString("uid", "nothing");
+//			token = uid.getString("uid", "nothing");
 			
-					String url = "api/mobile/profile/";
-					JSONObject json = jsonParser.makeHttpRequest(url, "POST", paramse, token);
+					String url = "api/users/onspot/";
+					json = PostRequest.execute("http://shaastra.org:8001/"+url, paramse);
 					Log.d("Update Results",json.toString());
+
+
 			return null;
 		}
 
 		@Override
 		protected void onPostExecute(String file_url) {
 			pDialog.dismiss();
-			if(token.equals("nothing")){
-				Toast.makeText(getApplicationContext(), "ERR: Can't update Details", Toast.LENGTH_LONG).show();
-				emailET.setEnabled(true);
-
-				regbut.setVisibility(View.VISIBLE);
-				updatebut.setVisibility(View.GONE);
-			}
-			else{
-				Toast.makeText(getApplicationContext(), "Details Updated Successfully", Toast.LENGTH_SHORT).show();
-				regbut.setVisibility(View.GONE);
-				updatebut.setVisibility(View.VISIBLE);
-			}
+            try {
+                idTV.setText("Shaastra ID: " + json.getJSONObject("data").getString("response"));
+            } catch (JSONException e) {
+                e.printStackTrace();
+                idTV.setText("Error, please check fields and try again");
+            }
 			/*Intent i=new Intent(PostView.this,PostView.class);
             i.putExtra("post_id", post_id);
            i.putExtra("WallName", wall_name);
@@ -558,8 +598,8 @@ regbut.setOnClickListener(new View.OnClickListener() {
 			final List<NameValuePair> paramse = new ArrayList<NameValuePair>();
 			
 				
-			paramse.add(new BasicNameValuePair("first_name", fname));
-			paramse.add(new BasicNameValuePair("last_name", lname));
+			paramse.add(new BasicNameValuePair("name", fname));
+			paramse.add(new BasicNameValuePair("secondName", lname));
 			paramse.add(new BasicNameValuePair("email", email));
 			paramse.add(new BasicNameValuePair("password", password));
 			SharedPreferences uid = getApplicationContext().getSharedPreferences("uid",0);
@@ -568,7 +608,7 @@ regbut.setOnClickListener(new View.OnClickListener() {
 					String url = "participant_registration/";
 					JSONObject json = jsonParser.makeHttpRequest(url, "POST", paramse, null);
 					
-					Log.d("Registration Results",json.toString());
+//					Log.d("Registration Results",json.toString());
 					String tx = null;
 						user_id=json.optString("user_id");
 						tx = json.optString("token");

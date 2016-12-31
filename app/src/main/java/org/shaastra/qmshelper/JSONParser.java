@@ -26,7 +26,7 @@ public class JSONParser {
 	static InputStream is = null;
 	static JSONObject jObj = null;
 	static String json = "";
-	static String urlStart = "http://erp.shaastra.org/";
+	static String urlStart = "http://www.shaastra.org:8001/";
 
 	// constructor
 	public JSONParser() {

@@ -28,6 +28,7 @@
         android:background="@drawable/roundshapentn"
         android:layout_centerHorizontal="true"
         android:padding="12dp"
+        android:visibility="gone"
         android:layout_marginTop="30dp"
         android:text="Registered User" 
         android:textColor="#ffffff"/>

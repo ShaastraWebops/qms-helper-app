@@ -66,6 +66,7 @@ import java.util.List;
  * @author aditya.polymath & snugghash 
  */
 public class FeedbackForm extends Activity implements OnClickListener {
+    private ProgressDialog pDialog;
     private String cmnts;
     String  user, pass,userid="anon";
 	String[][] data = new String[6][];
@@ -545,6 +546,11 @@ public class FeedbackForm extends Activity implements OnClickListener {
             q4 = r4;
             q5 = r5;
             cmnts = comments.getText().toString();
+            pDialog = new ProgressDialog(FeedbackForm.this);
+            pDialog.setMessage("Submitting feedback....");
+            pDialog.setIndeterminate(false);
+            pDialog.setCancelable(true);
+            pDialog.show();
         }
 
         @Override
@@ -581,6 +587,7 @@ public class FeedbackForm extends Activity implements OnClickListener {
         @Override
         protected void onPostExecute(final Boolean success) {
             Toast.makeText(getApplicationContext(), "Thank you for the feedback", Toast.LENGTH_LONG).show();
+            pDialog.dismiss();
             finish();
         }
 

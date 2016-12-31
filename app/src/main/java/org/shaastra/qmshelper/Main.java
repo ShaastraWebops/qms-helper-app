@@ -34,7 +34,7 @@ public class Main extends Activity {
 		pbut.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-						Intent intent = new Intent(Main.this, Passport.class);
+						Intent intent = new Intent(Main.this, NewUser.class);
 						intent.putExtra("user", user);
 						intent.putExtra("pass", pass);
 						// i.putExtra("myStrings",myStrings);

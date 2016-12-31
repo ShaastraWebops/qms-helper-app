@@ -2300,6 +2300,9 @@
         <item>Wright</item>
         <item>Circuit</item>
     </string-array><string-array name="SpecialForm">
+        <item>Fire N Ice</item>
+        <item>Hindu-Roofandfloor Code Marathon</item>
+        <item>Junkyard Wars</item>
         <item> SURC </item>
         <item> Blackbox</item>
         <item>Elekart</item>
@@ -2316,31 +2319,6 @@
         <item>Mixel</item>
         <item>BugCrush</item>
         <item>Research in 2 Min</item>
-        <item>	Design	</item>
-        <item>	Hospitality	</item>
-        <item>	Sales and Distribution	</item>
-        <item>	Prize and Prize money	</item>
-        <item>	Speakers	</item>
-        <item>	Sponsorship Lec</item>
-        <item>Sponsorship Company</item>
-        <item>	Catering</item>
-        <item>	General facilities</item>
-        <item>	Transportation	</item>
-        <item>	VIP care	</item>
-        <item>	Video Conference participant	</item>
-        <item>	Exhibition	</item>
-        <item>	Lecture	</item>
-        <!--<item> Workshop</item>-->
-        <item> Training</item>
-        <item> Simulation</item>
-        <item> Analysis</item>
-        <item> Gaming Zone</item>
-        <item> Entrepreneurship Confluence </item>
-        <!--  <item>	Events 	</item> -->
-        <item>	Shows	</item>
-        <item> Symposium </item>
-        <item>	Startup Hive Bucket 1	</item>
-        <item>	Startup Hive Bucket 2	</item>
 
     </string-array><string name="registeredfaq">"Tips:\n1.This app does not change the password for existing accounts.\n2.Since every account is tied to an email, the email cannot be changed. All other details are editable.\n3.Tap \"Clear All Fields\" to clear everything except the email."</string><string name="feedback_backup_csv">/sdcard/feedback_databackup.csv</string><string name="feedback_csv">/sdcard/feedback_data.csv</string></file><file path="/home/adarsh/Documents/Github/Android/qms-helper-app/app/src/main/res/values/questions.xml" qualifiers=""><string-array name="questions">
         <item>	SURC FEEDBACK	</item>
@@ -2596,11 +2574,11 @@
         <item>	General arrangements made for you	</item>
         <item>	Overall event experience	</item>
         <item>	Event FEEDBACK	</item>
-        <item>	Format of the event	</item>
-        <item>	Sufficiency of time provided	</item>
-        <item>	Difficulty of the Problem Statements/questions	</item>
+        <item>	Format of the event / workshop	</item>
+        <item>	Sufficiency of time provided / spent	</item>
+        <item>	Quality of the Workshop / Event Problem Statements	</item>
         <item>	Clarity of the instructions and rules conveyed	</item>
-        <item>	Overall event experience	</item>
+        <item>	Overall event / workshop experience	</item>
         <item>	Startup Hive Bucket 1 FEEDBACK	</item>
         <item>	1. How would you rate the organisation of the Pitchfest?	</item>
         <item>	2. Rate the lectures on the following parameters	</item>
