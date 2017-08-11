@@ -2,53 +2,67 @@
 <items version="2" >
 
     <item
-        jar="/home/gokulan/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        is-multidex="false"
+        jar="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/jars/classes.jar"
         jumboMode="false"
-        revision="21.1.2"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-7d0fb09dd4bfc12d59420cc361caf1df3f2f87ce.jar" />
-    </item>
-    <item
-        jar="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-08d37c882fa4962afeb94ccf80bf41ba05071b8a.jar" />
-    </item>
-    <item
-        jar="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
-        jumboMode="false"
+        optimize="true"
         revision="21.1.2"
         sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/pre-dexed/debug/classes-cf64e90e9c9e3af1fc7f692ddcd86eba2047e1ce.jar" />
+        <dex dex="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-21.0.3_c7b7d1b368b23660fd205bc0ec7cc07d5c4fccc3.jar" />
     </item>
     <item
-        jar="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/exploded-aar/me.dm7.barcodescanner/core/1.5/classes.jar"
+        is-multidex="false"
+        jar="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/exploded-aar/me.dm7.barcodescanner/zxing/1.5/jars/classes.jar"
         jumboMode="false"
-        revision="21.1.2"
-        sha1="85fd787f604f8fc6564ff7d4cce05f6522f180ab">
-        <dex dex="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/pre-dexed/debug/classes-a4a9c0bfcf596a7a0f0d33576f17e7d4ad739502.jar" />
-    </item>
-    <item
-        jar="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/pre-dexed/debug/classes-197b718e5e8fb3f3a759d028313429584d960332.jar" />
-    </item>
-    <item
-        jar="/home/gokulan/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.1.0/908e18674f895e3e1fa8f4a954b8c637a23d2801/core-3.1.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="908e18674f895e3e1fa8f4a954b8c637a23d2801">
-        <dex dex="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/pre-dexed/debug/core-3.1.0-092b96a67c5ced00c4a8c339462fc6394dbabbba.jar" />
-    </item>
-    <item
-        jar="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/exploded-aar/me.dm7.barcodescanner/zxing/1.5/classes.jar"
-        jumboMode="false"
+        optimize="true"
         revision="21.1.2"
         sha1="2aa015d05422639a5ff9c861488b56e447a77b4b">
-        <dex dex="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/pre-dexed/debug/classes-c0a7e39c676e029d49424fb45f2961130f6cb2ce.jar" />
+        <dex dex="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/pre-dexed/debug/me.dm7.barcodescanner-zxing-1.5_b29210f806cd92de482f1dc2e528bae3cf7487d7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3_6602f69ce8c16390e9daa79491af641543370488.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/exploded-aar/me.dm7.barcodescanner/core/1.5/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="85fd787f604f8fc6564ff7d4cce05f6522f180ab">
+        <dex dex="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/pre-dexed/debug/me.dm7.barcodescanner-core-1.5_55a5471cb7c26e0486220e2a6b0f848a0a034309.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/gokulan/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.1.0/908e18674f895e3e1fa8f4a954b8c637a23d2801/core-3.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="908e18674f895e3e1fa8f4a954b8c637a23d2801">
+        <dex dex="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/pre-dexed/debug/core-3.1.0_092b96a67c5ced00c4a8c339462fc6394dbabbba.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/gokulan/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3_7d0fb09dd4bfc12d59420cc361caf1df3f2f87ce.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/home/gokulan/Desktop/qms-helper-app/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-21.0.3_d89f09e51576a82004a0912fab03f8bb10c54dbd.jar" />
     </item>
 
 </items>

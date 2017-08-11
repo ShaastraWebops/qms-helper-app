@@ -48,7 +48,7 @@ public class EventDatabase {
 			cvc = new ContentValues();
 			cvc.put(KEY_ROWID, 0);
 			cvc.put(KEY_EVENTID, "1");
-			cvc.put(KEY_EVENT, "3D Animation Workshop");
+			cvc.put(KEY_EVENT, "Spark Quiz");
 			cvc.put(KEY_TEAM, "0");
 			db.insert(DATABASE_TABLE1, null, cvc);
 

@@ -3,6 +3,13 @@
 <!-- weird way of mapping questions to topics...-->
     <string-array
         name="questions">
+
+        <item> Spark Quiz FEEDBACK</item>
+        <item>Did you get interest to attend Shaastra 2018?</item>
+        <item>Overall, how would you rate the event?</item>
+        <item>How organized was the event?</item>
+        <item>On a scale of 5, rate how much information you got prior to the event.</item>
+
         <item>	SURC FEEDBACK	</item>
         <item> How satisfied were you with the procedure event has been conducted? \n(1 being not satisfied, 5 being satisfied) </item>
         <item> How tough was the prelims PS? \n(1 being easiest, 5 being toughest) </item>
@@ -256,11 +263,10 @@
         <item>	General arrangements made for you	</item>
         <item>	Overall event experience	</item>
         <item>	Event FEEDBACK	</item>
-        <item>	Format of the event / workshop	</item>
-        <item>	Sufficiency of time provided / spent	</item>
-        <item>	Quality of the Workshop / Event Problem Statements	</item>
-        <item>	Clarity of the instructions and rules conveyed	</item>
-        <item>	Overall event / workshop experience	</item>
+        <item>Did you get interest to attend Shaastra 2018?</item>
+        <item>Overall, how would you rate the event?</item>
+        <item>How organized was the event?</item>
+        <item>On a scale of 5, rate how much information you got prior to the event.</item>
         <item>	Startup Hive Bucket 1 FEEDBACK	</item>
         <item>	1. How would you rate the organisation of the Pitchfest?	</item>
         <item>	2. Rate the lectures on the following parameters	</item>
