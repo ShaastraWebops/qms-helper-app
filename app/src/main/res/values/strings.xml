@@ -73,7 +73,7 @@
         <item> Blackbox</item>
         <item>Elekart</item>
         <item>Android App Development Workshop</item>
-        <item>Game Dveelopment Workshop</item>
+        <item>Game Development Workshop</item>
         <item>PCB Design Workshop</item>
         <item>Python Workshop</item>
         <item>Web Development Workshop</item>
@@ -85,6 +85,7 @@
         <item>Mixel</item>
         <item>BugCrush</item>
         <item>Research in 2 Min</item>
+        <item>Machine Learning</item>
 
     </string-array>
 </resources>

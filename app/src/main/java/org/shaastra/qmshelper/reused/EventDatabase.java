@@ -443,6 +443,13 @@ public class EventDatabase {
 			cv8.put(KEY_EVENT, "Web Development Workshop");
 			cv8.put(KEY_TEAM, "0");
 			db.insert(DATABASE_TABLE1, null, cv8);
+
+			cv8 = new ContentValues();
+			cv8.put(KEY_ROWID, 57);
+			cv8.put(KEY_EVENTID, "58");
+			cv8.put(KEY_EVENT, "Machine Learning Workshop");
+			cv8.put(KEY_TEAM, "0");
+			db.insert(DATABASE_TABLE1, null, cv8);
 		}
 		@Override
 		public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {

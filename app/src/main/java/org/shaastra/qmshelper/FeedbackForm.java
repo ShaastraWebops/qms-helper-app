@@ -160,7 +160,7 @@ public class FeedbackForm extends Activity implements OnClickListener {
             categories.add(data[1][i]);
         }
         eveDb.close();
-
+        Log.e("categories", String.valueOf(categories.size()));
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,
                 R.layout.dropdown, categories),choiceAdapter =new ArrayAdapter<String>(this,
                 R.layout.dropdown, choiceStrings) ;
